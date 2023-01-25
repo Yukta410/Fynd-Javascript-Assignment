@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Dancing+Script&family=Poppins:wght@200;300&family=Rubik+Spray+Paint&display=swap');
+        body{
+            font-family: 'Comic Neue', cursive;
+            background-image: url('./imgs/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+       h1{
+        font-size: 90px;
+      }
+      #finish{
+        position: fixed;
+        margin-top: 500px;
+        margin-left: 1400px;
+        font-family: 'Poppins', cursive;
+        background: #000;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+
+      }
+      #back{
+        position: fixed;
+        margin-top: 500px;
+        margin-left: 10px;
+        height: 40px;
+        font-family: 'Poppins', cursive;
+        background: #000;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+      }
+      #choice{
+        margin-left: -300px;
+        font-family: 'Comic Neue', cursive;
+        padding: 10px;
+        width: 100;
+        border-radius: 20px;
+        
+      }
+      #display_here{
+        margin-left: 40px;
+        margin-top: -100px;
+      }
+      #fruits{
+        position: fixed;
+        margin-left: 650px;
+        /* border: #000 2px solid; */
+      }
+      .fr{
+        position: fixed;
+        margin-left: -800px;
+      }
+     
+    </style>
+</head>
+<body>
+   <div id="fruits">
+       <h1>Fruits</h1>
+
+        <select name="choice" id="choice"  onchange="fruit_name(this.value)">
+        <option>Select Fruit</option>
+        <option class="fr" value="0">Apple</option>
+        <option class="fr" value="1">Fig</option>
+        <option class="fr" value="2">Banana</option>
+        <option class="fr" value="3">Strawberry</option>
+        <option class="fr" value="4">Orange</option>
+        <option class="fr" value="5">Pineapple</option>
+    </select>
+
+    <div id="display_here"></div>
+    </div>
+    
+    <div id="end">
+        <button id="back" onclick="window.location.href='index.html';"  type="button">Home</button>
+        <button id="finish" onclick="window.location.href='thanks.html';"  type="button">Finish</button>
+    </div>
+    
+     
+    <script>
+         function fruit_name(userChoice) {
+        var output = document.getElementById("display_here");
+        output.innerHTML = "";
+    
+        var fruitimgs = [
+            "./imgs/apple.png",
+            "./imgs/fig.png",
+            "./imgs/banana.png",
+            "./imgs/strawberry.png",
+            "./imgs/orange.png",
+            "./imgs/pineapple.png"
+        ];
+    
+        var choices = ["Apple", "Fig", "Banana","Strawberry","Orange","Pineapple"];
+        var img = '<img src="' + fruitimgs[userChoice] + '">';
+    
+        output.innerHTML = img;
+    }
+
+    </script>
+</body>
+</html>

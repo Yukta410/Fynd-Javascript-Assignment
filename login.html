@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="form.css" rel="stylesheet">
+
+   
+<body bgcolor="#333333">
+  
+
+    <div class="form">
+        <h2 class="tri">Registration Form</h2>
+        <form>
+            <p>Student Name</p>
+            <input type="text" name="Name" placeholder="Only Characters allowed" pattern="[A-Za-z]{2,}" required="">
+<p>Mobile Number</p>
+            <input type="text" name="Mobile" placeholder="10 Digit Only" pattern="[0-9]{10}" required="">
+
+
+            <p class="em">Email Id</p>
+            <input type="text" name="Name" placeholder="Enter Email" pattern="(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})" required="">
+
+            <p class="em">Pincode</p>
+            <input type="text" name="Name" placeholder="6 Digit Only" pattern="[0-9]{6}" required="">
+<input type="submit" onclick="alert('Please ensure that details filled are correct')" name="" value="Register">
+                <p>*All the above fields are mandatory</p>
+        
+
+
+        </form>
+    </div>
+</body>
+</head>
+</html>

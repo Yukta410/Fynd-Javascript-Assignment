@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mainscreen" >
+      <h1 id="mainbodystyle">KID KASTLE</h1>
+      <button onclick="bgchange()" class="btn" id="start-btn">Start</button>
+    </div>
+
+    <div class="mainscreen">
+      <h1 id="secbodystyle">What to teach?</h1>
+      <ul class="topic-list" >
+        <li>
+          <button onclick="window.location.href='colors.html';" class="choose-topic-btn">
+            <p>Colours</p>
+            <img
+              src="./imgs/colorsbg.png"
+              alt="Colours"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button onclick="window.location.href='fruits.html';" class="choose-topic-btn">
+            <p>Fruits</p>
+            <img
+              src="./imgs/fruitsbg.png"
+              alt="Fruits"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button onclick="window.location.href='animal.html';" class="choose-topic-btn">
+            <p>Animals</p>
+            <img 
+             src="./imgs/animalsbg.png"
+             alt="Animals"
+              />
+          </button>
+        </li>
+
+        
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

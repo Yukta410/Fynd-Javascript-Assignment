@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Dancing+Script&family=Poppins:wght@200;300&family=Rubik+Spray+Paint&display=swap');
+      body{
+        font-family: 'Comic Neue', cursive;
+        background-image: url('./imgs/bgsecscreen.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        /* position: fixed; */
+      }
+      h1{
+        font-size: 90px;
+        margin-top: 150px;
+      }
+      #inputtxt{
+        font-family: 'Comic Neue', cursive;
+        padding: 10px;
+        margin: 10px;
+        width: 100;
+        border-radius: 20px;
+      }
+      #colors{
+        height: 400px;
+        width: 1000px;
+      }
+      #finish{
+        margin-top: -500px;
+        margin-left: 900px;
+       font-family: 'Poppins', cursive;
+        background: #000;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+      }
+      #back{
+        margin-top: -700px;
+        margin-left: 10px;
+       font-family: 'Poppins', cursive;
+        background: #000;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+      }
+    </style>
+</head>
+<body>
+    <center>   
+         <div id="colors">
+        <h1>Colors</h1>
+        <input type="text" id="inputtxt">
+    </div>
+    <div id="end">
+        <button id="back" onclick="window.location.href='index.html';"  type="button">Home</button>
+        <button id="finish" onclick="window.location.href='thanks.html';"  type="button">Finish</button>
+    </div>
+
+</center>
+
+    <script>
+        let keyevent1=document.getElementById('inputtxt')
+        keyevent1.addEventListener('keydown',function shoW(){
+            document.getElementById('colors').style.backgroundColor=this.value
+        })
+        
+//         function alertmsg(){
+//             alert("Have a good day!")
+// }
+    </script>
+</body>
+</html>
